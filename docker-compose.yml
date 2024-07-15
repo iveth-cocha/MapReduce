@@ -7,3 +7,4 @@ services:
     volumes: 
       - ./entrada:app/entrada
       - ./salida:/app/salida
+      xd
