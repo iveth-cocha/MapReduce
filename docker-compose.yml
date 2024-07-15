@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nodo1:
+    build:
+      dockerfile: dockerfile
+    container_name: nodo111
+    volumes: 
+      - ./entrada:app/entrada
+      - ./salida:/app/salida
