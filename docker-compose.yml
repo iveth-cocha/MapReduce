@@ -2,7 +2,7 @@ version: '3'
 services:
   nodo1:
     build:
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     container_name: nodo111
     volumes: 
       - ./entrada:app/entrada
@@ -10,7 +10,7 @@ services:
     command: sh -c "python mapReduce.py /app/entrada/texto1.txt > /app/salida/salida1.txt"
   nodo2:
     build:
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     container_name: nodo222
     volumes: 
       - ./entrada:app/entrada
@@ -18,7 +18,7 @@ services:
     command: sh -c "python mapReduce.py /app/entrada/texto2.txt > /app/salida/salida2.txt"
   nodo3:
     build:
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     container_name: nodo333
     volumes: 
         - ./entrada:app/entrada
