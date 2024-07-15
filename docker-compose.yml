@@ -24,3 +24,11 @@ services:
         - ./entrada:/app/entrada
         - ./salida:/app/salida
     command: sh -c "python mapReduce.py /app/entrada/texto3.txt > /app/salida/salida3.txt"
+  nodo4:
+    build:
+      dockerfile: Dockerfile
+    container_name: nodo444
+    volumes: 
+      - ./entrada:/app/entrada
+      - ./salida:/app/salida
+    command: sh -c "python mapReduce.py  /app/entrada/texto1.txt /app/entrada/texto2.txt /app/entrada/texto3.txt > /app/salida/resumen.txt"
