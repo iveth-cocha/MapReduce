@@ -1,0 +1,4 @@
+que vamos a hacer pruebas de como desplegar y si funciona ya dejamos listo el sistema....
+
+
+También dile  que necesitemos una maquina para que actúa de servidor, las pruebas es para ver si se usa solo la maquina de servidor o si hay la posibilidad de usar las otras maquinas además de la actúa como servidor
