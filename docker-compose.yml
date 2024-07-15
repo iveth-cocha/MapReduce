@@ -7,4 +7,20 @@ services:
     volumes: 
       - ./entrada:app/entrada
       - ./salida:/app/salida
-      xd
+    command: sh -c "python mapReduce.py /app/entrada/texto1.txt > /app/salida/salida1.txt"
+  nodo2:
+    build:
+      dockerfile: dockerfile
+    container_name: nodo222
+    volumes: 
+      - ./entrada:app/entrada
+      - ./salida:/app/salida
+    command: sh -c "python mapReduce.py /app/entrada/texto2.txt > /app/salida/salida2.txt"
+  nodo3:
+    build:
+      dockerfile: dockerfile
+    container_name: nodo333
+    volumes: 
+        - ./entrada:app/entrada
+        - ./salida:/app/salida
+    command: sh -c "python mapReduce.py /app/entrada/texto3.txt > /app/salida/salida3.txt"

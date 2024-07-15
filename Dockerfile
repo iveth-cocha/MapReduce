@@ -1,3 +1,5 @@
 FROM python:latest
+COPY mapReduce.py /app/mapReduce.py
+WORKDIR /app
 
-COPY mapReduce.py /app
+RUN pip install mijob
